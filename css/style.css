@@ -1,0 +1,580 @@
+  body{
+    margin: 0;
+  }
+  .slider{
+    height: 300px;
+    width: 600px;
+    overflow: hidden;
+  }
+  #slider-inner{  
+    display: flex;
+    flex-wrap: nowrap;
+    transition: all 0.3s ease-in-out ;    
+  }
+  .slider-img{
+    height: 300px;
+    min-width: 600px;
+  }
+  #backgroung-title{
+    display: flex;
+    background-color: rgba(247, 211, 166, 0.387);
+    height: 100px;
+    width: 100%;
+    justify-content: center;
+  }
+  #title{
+    width: 300px;
+    height: 100px;
+  }
+  h1{
+
+    text-align: center;
+  }
+  p{
+    text-align: justify;
+    margin: 0;
+    font-size: large;
+  }
+  #grid{
+    display: grid;
+    grid-template-rows: 400px 400px 400px ;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+  }
+  nav{
+    height: 50px;
+    background-color: rgba(44, 24, 24, 0.934);
+  }
+  .enlace-img{
+    display: block;
+    float: right;
+  }
+  .enlace-img img{
+    height: 35px;
+    width: 35px;
+    padding-top: 10px;
+    margin-right: 10px;
+  }
+  #container-background{
+    position: relative;
+    height: 85vh;
+    width: 100%;
+  }
+  #container-background::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(61, 45, 203, 0.5), rgba(157, 164, 160, 0.5)); /* Aquí defines el gradiente */
+    pointer-events: none; 
+    z-index: 1;
+  }
+  #body{
+    margin-left: 5%;
+    width: 90%;
+  }
+  #container-pnf{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  #pnf{
+  
+    width: 50%;
+  }
+  .item-right{
+    margin-left: 20px;
+  }
+  .pnf-container{
+    display: flex;
+  }
+  .pnf{
+    margin-right: 10px;
+    float: left;
+    width: 100px;
+    height: 100px;
+  }
+  .item2{
+    width: 45%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  #map{
+    height: 450px;
+    width: 100%;
+    background: rgb(0, 0, 0, 0.1);
+  }
+  iframe{
+    margin-left: 15%;
+    height: 70%;
+    width: 70%;
+  }
+  #background{
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+  #login-container{
+    display: flex;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.1);
+    color:white;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    z-index: 2;
+    border-radius: 2em;
+  }
+  label{
+    font-size: large;
+    display: block;
+  }
+  input{
+    width: 150px;
+    border:  solid black;
+    border-radius: 1em;
+  }
+  .form-group{
+    margin-bottom: 1em;
+  }
+  button{
+
+    background: rgba(0, 0, 0, 0);
+    color: white;
+    border:  solid black;
+    border-radius: 50%;
+    height: 40px;
+    width: 80px;
+  }
+  #aside{
+    color: white;
+    position: absolute;
+    top: 25%;
+    left: 40%;
+    z-index: 2;
+    width: 55%;
+  }
+  #aside h1{
+    font-size: xx-large;
+  }
+  #aside p{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:x-large;
+  }
+  #map h1{
+    font-size: x-large;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media only screen and (max-width : 320px) {
+      #login-container{
+        width: 90%;
+        height: 200px;
+        position: absolute;
+        top: 40%;
+        left: 5%;
+        }
+        label{
+          font-size: small;
+          display: block;
+        }
+        input{
+          width: 100px;
+        }
+        #aside{
+          top: 20px;
+          left: 5%;
+          width: 90%;
+        }
+        #aside h1{
+          font-size:small;
+        }
+        #aside p{
+          font-size:smaller;
+        }
+        h2{
+          font-size: small;
+        }
+        #body{
+          margin-left: 5%;
+          width: 90%;
+        }
+        .slider{
+          height: 250px;
+          width: 100%;
+        }
+        #container-pnf{
+          margin-top: 20px;
+          display: block ;
+        }
+        .slider-img{
+          min-width: 100%;
+          height: 250px;
+        }
+        #pnf{
+          margin-bottom: 20px;
+          width: 100%;
+        }
+        #grid{
+          display: block;
+        }
+        h3{
+          font-size: small;
+        }
+        p{
+          font-size: smaller;
+        }
+        .pnf-container{
+          display: block;
+          text-align: center;
+        }
+        .pnf{
+          margin-right: 0;
+          float: none;
+          position: relative;
+        }
+        .item2{
+          width: 100%;
+          margin-bottom: 20px;
+        }
+        #map{
+          height: 300px;
+        }
+        #map h1{
+          font-size: smaller;
+        }
+        .item-right{
+          margin-left: 0;
+        }
+        iframe{
+          margin-left: 10%;
+          height: 60%;
+          width: 80%;
+        }
+        .item h2{
+          text-align: center;
+        }
+        .item-right h2{
+          text-align: center;
+        }
+        .enlace-img img{
+          height: 25px;
+          width: 25px;
+          padding-top: 10px;
+          margin-right: 10px;
+        }
+        .item2 h2{
+          text-align: center;
+        }
+  } 
+  @media only screen and (min-width : 320px) and ( max-width:480px){
+      #login-container{
+        width: 90%;
+        height: 200px;
+        top: 40%;
+        left: 5%;
+        }
+        label{
+          font-size: small;
+          display: block;
+        }
+        input{
+          width: 80%;
+        }
+        #aside{
+          top: 20px;
+          left: 5%;
+          width: 90%;
+        }
+        #aside h1{
+          font-size:small;
+        }
+        #aside p{
+          font-size:smaller;
+        }
+        h2{
+          font-size: small;
+        }
+        #body{
+          margin-left: 5%;
+          width: 90%;
+        }
+        .slider{
+          width: 100%;
+        }
+        #container-pnf{
+          display: block ;
+        }
+        .slider-img{
+          min-width: 100%;
+        }
+        #pnf{
+          margin-bottom: 20px;
+          width: 100%;
+        }
+        h3{
+          font-size: small;
+        }
+        p{
+          font-size: smaller;
+        }
+        .pnf-container{
+          display: block;
+          text-align: center;
+        }
+        .pnf{
+          margin-right: 0;
+          float: none;
+          margin-bottom: 15px;
+        }
+        .item{
+          margin-bottom: 30px;
+        }
+        .item2{
+          width: 100%;
+          margin-bottom: 30px;
+        }
+        #map{
+          height: 300px;
+        }
+        #map h1{
+          font-size: smaller;
+        }
+        #grid{
+          display: block;
+        }
+        .item h2{
+          text-align: center;
+        }
+        .item-right h2{
+          text-align: center;
+        }
+        .item-right{
+          margin-left: 0;
+        }
+        .item2 h2{
+          text-align: center;
+        }
+        .enlace-img img{
+          height: 25px;
+          width: 25px;
+        }
+        iframe{
+          width: 80%;
+          margin-left: 10%;
+        }
+  } 
+  @media only screen and (min-width : 481px) and ( max-width:767px){
+    #login-container{
+      width: 50%;
+      height: 250px;
+      top: 40%;
+      left: 25%;
+      }
+      label{
+        font-size:medium;
+        display: block;
+      }
+      input{
+        width: 80%;
+      }
+      #aside{
+        top: 20px;
+        left: 5%;
+        width: 90%;
+      }
+      #aside h1{
+        font-size:large;
+      }
+      #aside p{
+        font-size:medium;
+      } 
+      #container-pnf{
+        display: block ;
+      }
+      #pnf{
+        margin-bottom: 20px;
+        width: 100%;
+      }
+      #grid{
+        display: block;
+      } 
+      .item h2{
+        text-align: center;
+      }
+      .item-right h2{
+        text-align: center;
+      }
+      .item-right{
+        margin-left: 0;
+      }
+      .item2{
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      .slider{
+        width: 100%;
+      }
+      .slider-img{
+        min-width: 100%;
+      }
+      .pnf-container{
+        display: block;
+        text-align: center;
+      }
+      .pnf {
+        margin-right: 0;
+        float: none;
+      }
+
+  }
+  @media only screen and (min-width : 768px) and (max-width : 1024px) {
+    #login-container{
+      width: 60%;
+      height: 250px;
+      top: 40%;
+      left:20%;
+      }
+      form{
+        width: 50%;
+      }
+      label{
+        margin-left:12% ;
+        font-size:medium;
+        display: block;
+      }
+      .form-group h2{
+        text-align: center;
+      }
+      input{
+        width: 80%;
+        left: 10%;
+        position: relative;
+      }
+      #aside{
+        top: 20px;
+        left: 5%;
+        width: 90%;
+      }
+      #aside h1{
+        font-size:larger;
+      }
+      #aside p{
+        font-size:large;
+      } 
+      button{
+        margin-left:12% ;
+      }
+      #body{
+        margin-left: 5%;
+        width: 90%;
+      }
+      #container-pnf{
+        display: block ;
+      }
+      #pnf{
+        margin-bottom: 20px;
+        width: 100%;
+      }
+      #grid{
+        display: block;
+      } 
+      .slider{
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .item h2{
+        text-align: center;
+      }
+      .item-right h2{
+        text-align: center;
+      }
+      .item-right{
+        margin-left: 0;
+      }
+      .item2{
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      .pnf-container{
+        display: block;
+        text-align: center;
+      }
+      .pnf {
+        margin-right: 0;
+        float: none;
+      }
+      iframe{
+        width: 80%;
+        margin-left: 10%;
+      }
+      #map{
+        height: 500px;
+      }
+  }
+  @media only screen and (min-width : 1025px) and (max-width : 1440px){
+    aside h1{
+      margin-top: 0;
+    }
+    #body{
+      width: 95%;
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    #pnf{
+      width: 45%;
+    }
+    .slider{
+      width: 50%;
+    }
+    .slider-img{
+      min-width: 100%;
+    }
+    #grid{
+      display: grid;
+      grid-template-rows: 400px 520px 550px ;
+      grid-template-columns: 50% 50%;
+      justify-items: center;
+    }
+    .pnf-container{
+      display: block;
+      text-align: center;
+    }
+    .pnf{
+      float: none;
+    }
+    
+  }
